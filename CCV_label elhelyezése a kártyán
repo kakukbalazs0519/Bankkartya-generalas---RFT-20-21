@@ -1,0 +1,7 @@
+ // CCV_label
+            // 
+            this.CCV_label.Location = new System.Drawing.Point(1030, 135);
+            this.CCV_label.Name = "CCV_label";
+            this.CCV_label.Size = new System.Drawing.Size(63, 36);
+            this.CCV_label.TabIndex = 9;
+            this.CCV_label.Text = "label5";
