@@ -1,0 +1,68 @@
+private void ApplyStyleTo(Label label)
+        {
+            label.ForeColor = GetLabelForeColor(label.Text);
+        }
+
+        private Color GetLabelForeColor(string text)
+        {
+            if (text.Substring(5, 1) == text)
+            {
+                text.Substring(5, 1);
+                //Szín
+            }
+            return (text != null && text.Substring(5, 1) == text) ? Color.Red : Color.Black;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
+            pictureBox2.SizeMode = PictureBoxSizeMode.AutoSize;
+        }
+
+        private void Validnumber_textBox_TextChanged(object sender, EventArgs e)
+        {
+            validlabel.Text = dateTimePicker1.Value.Date.ToString("MM/yy");
+            validlabel.Text = validlabel.Text.Replace(".", "/");
+        }
+
+        private void Cardtulaj_textBox1_TextChanged(object sender, EventArgs e)
+        {
+            Namelabel.Text = Cardtulaj_textBox1.Text;
+            Alairas_label.Text = Cardtulaj_textBox1.Text;
+        }
+        private void cardnumber_textbox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsDigit(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 46 && (e.KeyChar != ' '))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Cardtulaj_textBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar) && e.KeyChar != 8 && (e.KeyChar != '.') && (e.KeyChar != ' '))
+            {
+                e.Handled = true;
+            }
+            if ((e.KeyChar == '.') && ((sender as TextBox).Text.IndexOf('.') > -1))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Mentes_button_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                odb = new AdatbázisQleDb();
+                odb.Mentes(tipus, cardnumber_textbox.Text, Valódi_checkbox.Checked, Convert.ToString(dateTimePicker1.Value), Namelabel.Text);
+            }
+            catch (Exception exc)
+            {
+                MessageBox.Show(exc.Message);
+                throw;
+            }
+           
+        }
+
+
