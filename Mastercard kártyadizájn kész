@@ -1,0 +1,12 @@
+ // Mastercard_radB
+            // 
+            this.Mastercard_radB.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Mastercard_radB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Mastercard_radB.Location = new System.Drawing.Point(679, 384);
+            this.Mastercard_radB.Name = "Mastercard_radB";
+            this.Mastercard_radB.Size = new System.Drawing.Size(85, 37);
+            this.Mastercard_radB.TabIndex = 21;
+            this.Mastercard_radB.Text = "Mastercard";
+            this.Mastercard_radB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Mastercard_radB.UseVisualStyleBackColor = true;
+            this.Mastercard_radB.CheckedChanged += new System.EventHandler(this.CardTipus);
