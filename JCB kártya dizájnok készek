@@ -1,0 +1,25 @@
+     // JCB_15_radB
+            // 
+            this.JCB_15_radB.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.JCB_15_radB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.JCB_15_radB.Location = new System.Drawing.Point(497, 384);
+            this.JCB_15_radB.Name = "JCB_15_radB";
+            this.JCB_15_radB.Size = new System.Drawing.Size(85, 37);
+            this.JCB_15_radB.TabIndex = 19;
+            this.JCB_15_radB.Text = "JCB-15";
+            this.JCB_15_radB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JCB_15_radB.UseVisualStyleBackColor = true;
+            this.JCB_15_radB.CheckedChanged += new System.EventHandler(this.CardTipus);
+            // 
+            // JCB_16_radB
+            // 
+            this.JCB_16_radB.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.JCB_16_radB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.JCB_16_radB.Location = new System.Drawing.Point(588, 384);
+            this.JCB_16_radB.Name = "JCB_16_radB";
+            this.JCB_16_radB.Size = new System.Drawing.Size(85, 37);
+            this.JCB_16_radB.TabIndex = 20;
+            this.JCB_16_radB.Text = "JCB-16";
+            this.JCB_16_radB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.JCB_16_radB.UseVisualStyleBackColor = true;
+            this.JCB_16_radB.CheckedChanged += new System.EventHandler(this.CardTipus);
