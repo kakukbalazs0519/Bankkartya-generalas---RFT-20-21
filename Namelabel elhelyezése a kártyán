@@ -1,0 +1,10 @@
+ // Namelabel
+            // 
+            this.Namelabel.AutoSize = true;
+            this.Namelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Namelabel.ForeColor = System.Drawing.Color.Orange;
+            this.Namelabel.Location = new System.Drawing.Point(45, 310);
+            this.Namelabel.Name = "Namelabel";
+            this.Namelabel.Size = new System.Drawing.Size(108, 37);
+            this.Namelabel.TabIndex = 8;
+            this.Namelabel.Text = "label4";
