@@ -1,0 +1,12 @@
+public void Mentes(string Kartya_tipus, string Kartya_szama,bool valodi,string ervenyesseg,string tulajdonos)
+            {
+                try
+                {
+                    conn.Open();
+                    string query = String.Format("INSERT INTO Credit_card (Kartya_tipus, Kartya_szama, Valodi, Ervenyessegi_ido, Tulajdonos) VALUES ('{0}','{1}',{2},'{3}','{4}');", Kartya_tipus, Kartya_szama, Convert.ToBoolean(valodi), ervenyesseg, tulajdonos);
+                    oda = new OleDbDataAdapter(query, conn);
+                    ds = new DataSet();
+                    oda.Fill(ds);
+                }
+                catch (OleDbException ode) { MessageBox.Show(ode.Message);
+                finally { Lekapcsolódás(); }
