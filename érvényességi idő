@@ -1,0 +1,6 @@
+ // ervényessegi_idő
+            // 
+            this.ervényessegi_idő.Location = new System.Drawing.Point(91, 402);
+            this.ervényessegi_idő.Name = "ervényessegi_idő";
+            this.ervényessegi_idő.Size = new System.Drawing.Size(100, 20);
+            this.ervényessegi_idő.TabIndex = 3;
