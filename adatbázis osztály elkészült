@@ -1,0 +1,48 @@
+public class AdatbázisQleDb
+        {
+            protected DataSet ds;
+            protected OleDbDataAdapter oda;
+            protected DataTable dt;
+            protected OleDbCommand oc;
+            OleDbConnection conn = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" + Environment.CurrentDirectory + @"\Creditcard.accdb" + ";");
+
+            #region Singleton
+
+            public AdatbázisQleDb()
+            {
+            }
+            public static AdatbázisQleDb sajat;
+            public static AdatbázisQleDb PeldanySzerez()
+            {
+                if (sajat == null) sajat = new AdatbázisQleDb();
+                return sajat;
+            }
+
+            #endregion
+
+            public bool Kapcsolódás(string Adatbázisfájl)
+            {
+                try
+                {
+                    conn.Open();
+                    return true;
+                }
+                catch (OleDbException ode)
+                {
+
+                    MessageBox.Show(ode.Message);
+                    return false;
+                }
+                finally
+                {
+                    Lekapcsolódás();
+                }
+            }
+            public void Lekapcsolódás()
+            {
+                if (conn.State == ConnectionState.Open)
+                {
+                    conn.Close();
+                    //conn.Dispose();
+                }
+            }
