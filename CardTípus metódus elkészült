@@ -1,0 +1,46 @@
+  private void CardTipus(object sender, EventArgs e)
+        {
+            Valódi_checkbox.Checked = false;
+            try
+            {
+                RadioButton btn = sender as RadioButton;
+                if (btn != null && btn.Checked)
+                {
+                    tipus = btn.Text;
+                    switch (btn.Text)
+                    {
+                        case "Amex": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.AMEX_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.Blue;
+                            break;
+                        case "Diners": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.DINERS_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.CadetBlue;
+                            break;
+                        case "Discover": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.DISCOVER_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.Orange;
+                            break;
+                        case "Enroute": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.ENROUTE_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.Silver;
+                            break;
+                        case "JCB-15": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.JCB_15_PREFIX_LIST, 15);
+                            CardNumber_Label.ForeColor = Color.LimeGreen;
+                            break;
+                        case "JCB-16": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.JCB_16_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.Lime;
+                            break;
+                        case "Mastercard": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.MASTERCARD_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.OrangeRed;
+                            break;
+                        case "Visa": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.VISA_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.RoyalBlue;
+                            break;
+                        case "Voyager": cardnumber_textbox.Text = Generate.GenerateCardNumber(Generate.VOYAGER_PREFIX_LIST, 16);
+                            CardNumber_Label.ForeColor = Color.Goldenrod;
+                            break;
+                        default: throw new Exception();
+                    }
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Kártya típus hiba!");
+            }
