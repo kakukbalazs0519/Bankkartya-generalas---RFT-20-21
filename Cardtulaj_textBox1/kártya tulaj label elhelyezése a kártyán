@@ -1,0 +1,6 @@
+ // Cardtulaj_textBox1
+            // 
+            this.Cardtulaj_textBox1.Location = new System.Drawing.Point(91, 429);
+            this.Cardtulaj_textBox1.Name = "Cardtulaj_textBox1";
+            this.Cardtulaj_textBox1.Size = new System.Drawing.Size(100, 20);
+            this.Cardtulaj_textBox1.TabIndex = 4;
