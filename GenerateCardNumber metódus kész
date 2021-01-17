@@ -1,0 +1,12 @@
+ublic static string GenerateCardNumber(string[] prefixList, int length)
+        {
+            int randomPrefix = new Random().Next(0, prefixList.Length - 1);
+
+            if (randomPrefix > 1)
+            {
+                randomPrefix--;
+            }
+
+            string ccnumber = prefixList[randomPrefix];
+
+            return CreateFakeCreditCardNumber(ccnumber, length);
