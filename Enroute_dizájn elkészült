@@ -1,0 +1,12 @@
+// Enroute_dizájn
+            // 
+            this.Enroute_radB.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Enroute_radB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Enroute_radB.Location = new System.Drawing.Point(406, 384);
+            this.Enroute_radB.Name = "Enroute_radB";
+            this.Enroute_radB.Size = new System.Drawing.Size(85, 37);
+            this.Enroute_radB.TabIndex = 18;
+            this.Enroute_radB.Text = "Enroute";
+            this.Enroute_radB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Enroute_radB.UseVisualStyleBackColor = true;
+            this.Enroute_radB.CheckedChanged += new System.EventHandler(this.CardTipus);
