@@ -1,0 +1,12 @@
+ // Voyager_radB
+            // 
+            this.Voyager_radB.CheckAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.Voyager_radB.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Voyager_radB.Location = new System.Drawing.Point(861, 384);
+            this.Voyager_radB.Name = "Voyager_radB";
+            this.Voyager_radB.Size = new System.Drawing.Size(85, 37);
+            this.Voyager_radB.TabIndex = 23;
+            this.Voyager_radB.Text = "Voyager";
+            this.Voyager_radB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Voyager_radB.UseVisualStyleBackColor = true;
+            this.Voyager_radB.CheckedChanged += new System.EventHandler(this.CardTipus);
