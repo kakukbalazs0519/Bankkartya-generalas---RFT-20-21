@@ -1,0 +1,9 @@
+// Alairas_label
+            // 
+            this.Alairas_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Alairas_label.ForeColor = System.Drawing.Color.Black;
+            this.Alairas_label.Location = new System.Drawing.Point(638, 145);
+            this.Alairas_label.Name = "Alairas_label";
+            this.Alairas_label.Size = new System.Drawing.Size(371, 37);
+            this.Alairas_label.TabIndex = 15;
+            this.Alairas_label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
