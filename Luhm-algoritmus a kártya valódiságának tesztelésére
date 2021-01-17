@@ -1,0 +1,37 @@
+public bool Valódi(string creditCardNumber)
+        {
+            try
+            {
+                double sum = 0;
+                for (int i = 0; i <= creditCardNumber.Length-1; i++)
+                {
+                    double akt = char.GetNumericValue(creditCardNumber,i) ;
+                    if ((i % 2)==0)
+                    {
+                        if (akt>4)
+                        {
+                            sum = sum + 2 * akt - 9;
+                        }
+                        else
+                        {
+                            sum = sum + 2 * akt;
+                        }
+                    }
+                    else
+                    {
+                        sum = sum + akt;
+                    }
+                }
+                if ((sum % 10) == 0)
+                {
+                    return true;
+                }
+            }
+            catch
+            {
+                return false;
+            }
+            return false;
+            
+            
+        }
