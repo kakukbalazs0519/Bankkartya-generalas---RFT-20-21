@@ -1,0 +1,10 @@
+// Card4N_label
+            // 
+            this.Card4N_label.AutoSize = true;
+            this.Card4N_label.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.Card4N_label.ForeColor = System.Drawing.Color.White;
+            this.Card4N_label.Location = new System.Drawing.Point(52, 281);
+            this.Card4N_label.Name = "Card4N_label";
+            this.Card4N_label.Size = new System.Drawing.Size(42, 16);
+            this.Card4N_label.TabIndex = 6;
+            this.Card4N_label.Text = "label2";
