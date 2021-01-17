@@ -1,0 +1,9 @@
+ // CardNumber_Label
+            // 
+            this.CardNumber_Label.AutoSize = true;
+            this.CardNumber_Label.Location = new System.Drawing.Point(42, 219);
+            this.CardNumber_Label.Name = "CardNumber_Label";
+            this.CardNumber_Label.Size = new System.Drawing.Size(35, 13);
+            this.CardNumber_Label.TabIndex = 3;
+            this.CardNumber_Label.Text = "label1";
+            this.CardNumber_Label.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
